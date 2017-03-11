@@ -10,8 +10,8 @@
 
 @interface LoginViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *phoneNumberField;
-@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (assign, nonatomic) IBOutlet UITextField *phoneNumberField;
+@property (assign, nonatomic) IBOutlet UITextField *passwordField;
 
 - (IBAction)loginTouched:(UIButton*)sender;
 
