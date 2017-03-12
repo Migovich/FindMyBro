@@ -13,8 +13,10 @@
 		CD031AED1E740CD50068B5CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD031AEB1E740CD50068B5CA /* Main.storyboard */; };
 		CD031AEF1E740CD50068B5CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD031AEE1E740CD50068B5CA /* Assets.xcassets */; };
 		CD031AF21E740CD50068B5CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD031AF01E740CD50068B5CA /* LaunchScreen.storyboard */; };
+		CDD7F3A01E74FE1D00D471B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDD7F39F1E74FE1D00D471B4 /* CoreLocation.framework */; };
 		CDD9FF341E745D7D00882D5A /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD9FF331E745D7D00882D5A /* ProfileViewController.m */; };
 		CDD9FF371E74650500882D5A /* ConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD9FF361E74650500882D5A /* ConnectViewController.m */; };
+		CDD9FF3A1E74E41300882D5A /* AllowLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD9FF391E74E41300882D5A /* AllowLocationViewController.m */; };
 		CDDB59F01E741EAE004C6780 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDB59EF1E741EAE004C6780 /* LoginViewController.m */; };
 		CDDB59F31E743202004C6780 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDB59F21E743202004C6780 /* Login.m */; };
 		E25BD15C6945432869EE636F /* libPods-FindMyBro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7264D70AAE37BE5D316E8AB /* libPods-FindMyBro.a */; };
@@ -33,10 +35,13 @@
 		CD031AEE1E740CD50068B5CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD031AF11E740CD50068B5CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD031AF31E740CD50068B5CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD7F39F1E74FE1D00D471B4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CDD9FF321E745D7D00882D5A /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		CDD9FF331E745D7D00882D5A /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		CDD9FF351E74650500882D5A /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
 		CDD9FF361E74650500882D5A /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
+		CDD9FF381E74E41300882D5A /* AllowLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllowLocationViewController.h; sourceTree = "<group>"; };
+		CDD9FF391E74E41300882D5A /* AllowLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllowLocationViewController.m; sourceTree = "<group>"; };
 		CDDB59EE1E741EAE004C6780 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		CDDB59EF1E741EAE004C6780 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		CDDB59F11E743202004C6780 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD7F3A01E74FE1D00D471B4 /* CoreLocation.framework in Frameworks */,
 				E25BD15C6945432869EE636F /* libPods-FindMyBro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +74,7 @@
 		1101BBD67A2B5E23B2436BC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDD7F39F1E74FE1D00D471B4 /* CoreLocation.framework */,
 				D7264D70AAE37BE5D316E8AB /* libPods-FindMyBro.a */,
 			);
 			name = Frameworks;
@@ -126,6 +133,8 @@
 				CDD9FF331E745D7D00882D5A /* ProfileViewController.m */,
 				CDD9FF351E74650500882D5A /* ConnectViewController.h */,
 				CDD9FF361E74650500882D5A /* ConnectViewController.m */,
+				CDD9FF381E74E41300882D5A /* AllowLocationViewController.h */,
+				CDD9FF391E74E41300882D5A /* AllowLocationViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -277,6 +286,7 @@
 				CD031AE71E740CD50068B5CA /* AppDelegate.m in Sources */,
 				CDD9FF341E745D7D00882D5A /* ProfileViewController.m in Sources */,
 				CD031AE41E740CD50068B5CA /* main.m in Sources */,
+				CDD9FF3A1E74E41300882D5A /* AllowLocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

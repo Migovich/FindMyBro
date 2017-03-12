@@ -12,8 +12,11 @@
 
 @property (assign, nonatomic) IBOutlet UITextField *phoneNumberField;
 @property (assign, nonatomic) IBOutlet UITextField *passwordField;
+@property (retain, nonatomic) IBOutlet UIButton *loginButton;
 
 - (IBAction)loginTouched:(UIButton*)sender;
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
+- (void) validateTextFields;
 
 @end
 

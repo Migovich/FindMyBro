@@ -64,7 +64,24 @@
     }];
 }
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    [self validateTextFields];
+    return YES;
+}
+
+- (void) validateTextFields {
+    if ((_phoneNumberField.text.length > 0) && (_passwordField.text.length > 0)) {
+        _loginButton.enabled = YES;
+    }
+    else {
+        _loginButton.enabled = NO;
+    }
+}
+
 - (void)viewDidLoad {
+    [super viewDidLoad];
+    [_loginButton setEnabled:NO];
+    [self validateTextFields];
 }
 
 
