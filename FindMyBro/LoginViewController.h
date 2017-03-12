@@ -10,9 +10,9 @@
 
 @interface LoginViewController : UIViewController
 
-@property (assign, nonatomic) IBOutlet UITextField *phoneNumberField;
-@property (assign, nonatomic) IBOutlet UITextField *passwordField;
-@property (retain, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UITextField *phoneNumberField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (strong, nonatomic) IBOutlet UIButton *loginButton;
 
 - (IBAction)loginTouched:(UIButton*)sender;
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;

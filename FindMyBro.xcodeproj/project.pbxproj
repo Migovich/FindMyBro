@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3279240B1E751A5200DA46E3 /* SwoppyDesignConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwoppyDesignConstants.h; sourceTree = "<group>"; };
 		454EB1705BD72543D4876247 /* Pods-FindMyBro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyBro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyBro/Pods-FindMyBro.debug.xcconfig"; sourceTree = "<group>"; };
 		8C514E69C22E164585F54DF1 /* Pods-FindMyBro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyBro.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindMyBro/Pods-FindMyBro.release.xcconfig"; sourceTree = "<group>"; };
 		CD031ADF1E740CD50068B5CA /* FindMyBro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyBro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,11 +81,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3279240A1E751A2200DA46E3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3279240B1E751A5200DA46E3 /* SwoppyDesignConstants.h */,
+			);
+			name = Constants;
+			path = FindMyBro;
+			sourceTree = "<group>";
+		};
 		CD031AD61E740CD50068B5CA = {
 			isa = PBXGroup;
 			children = (
 				CD031AE11E740CD50068B5CA /* FindMyBro */,
 				CD031AE01E740CD50068B5CA /* Products */,
+				3279240A1E751A2200DA46E3 /* Constants */,
 				0C325BD103842BD7A0879829 /* Pods */,
 				1101BBD67A2B5E23B2436BC8 /* Frameworks */,
 			);
@@ -190,7 +201,7 @@
 				TargetAttributes = {
 					CD031ADE1E740CD50068B5CA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = JCY45QFZ9K;
+						DevelopmentTeam = NL27TY64UF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -405,10 +416,11 @@
 			baseConfigurationReference = 454EB1705BD72543D4876247 /* Pods-FindMyBro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JCY45QFZ9K;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = NL27TY64UF;
 				INFOPLIST_FILE = FindMyBro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.artemmigovich.FindMyBro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artemmigovich1.FindMyBro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -418,10 +430,11 @@
 			baseConfigurationReference = 8C514E69C22E164585F54DF1 /* Pods-FindMyBro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JCY45QFZ9K;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = NL27TY64UF;
 				INFOPLIST_FILE = FindMyBro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.artemmigovich.FindMyBro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artemmigovich1.FindMyBro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

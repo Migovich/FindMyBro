@@ -7,11 +7,17 @@
 //
 
 #import "LoginViewController.h"
+#import "ColorUtils.h"
+#import "SwoppyDesignConstants.h"
 #import "Login.h"
 #import "APContact.h"
 #import "APAddressBook.h"
 
 @interface LoginViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *bgImageView;
+@property (strong, nonatomic) NSArray *bgImages;
+@property (assign, nonatomic) NSInteger imgAmount;
 
 @end
 
@@ -78,10 +84,50 @@
     }
 }
 
+- (void)setupUI
+{
+    self.view.backgroundColor = [UIColor colorWithRGBValue:kSwoppyDesignLoginBackgroundColor];
+    
+    self.bgImages = @[@"bg_image_1",
+                      @"bg_image_2",
+                      @"bg_image_3",
+                      @"bg_image_4"];
+    self.imgAmount = 0;
+    
+    [self animationImageWithAmount:self.imgAmount];
+}
+
+- (void)animationImageWithAmount:(NSInteger)imgAmount
+{
+    __weak typeof(self) weakSelf = self;
+    [UIView transitionWithView:weakSelf.bgImageView
+                      duration:3.0f
+                       options:UIViewAnimationOptionTransitionCrossDissolve
+                    animations:^{
+                        weakSelf.bgImageView.image = [UIImage imageNamed:weakSelf.bgImages[weakSelf.imgAmount]];
+                    }completion:^(BOOL finished) {
+                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                            [weakSelf animationImageWithAmount:[weakSelf getNextImageAmount]];
+                        });
+                    }];
+}
+
+- (NSInteger) getNextImageAmount
+{
+    self.imgAmount +=1;
+    if (self.imgAmount >= self.bgImages.count) {
+        self.imgAmount = 0;
+    }
+    
+    return self.imgAmount;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [_loginButton setEnabled:NO];
     [self validateTextFields];
+    [self setupUI];
 }
 
 

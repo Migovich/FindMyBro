@@ -10,7 +10,7 @@
 
 @interface Login : NSObject
 
-@property (assign, nonatomic) NSNumber* phoneNumber;
-@property (assign, nonatomic) NSString* password;
+@property (weak, nonatomic) NSNumber* phoneNumber;
+@property (weak, nonatomic) NSString* password;
 
 @end

@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ConnectViewController : UIViewController<UITextFieldDelegate>
-@property (retain, nonatomic) IBOutlet UITextField *lettersField;
-@property (retain, nonatomic) IBOutlet UITextField *numbersField;
+@property (strong, nonatomic) IBOutlet UITextField *lettersField;
+@property (strong, nonatomic) IBOutlet UITextField *numbersField;
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
 
