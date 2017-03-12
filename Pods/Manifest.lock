@@ -2,13 +2,16 @@ PODS:
   - APAddressBook (0.3.1):
     - APAddressBook/Core (= 0.3.1)
   - APAddressBook/Core (0.3.1)
+  - ColorUtils (1.1.3)
 
 DEPENDENCIES:
   - APAddressBook
+  - ColorUtils (~> 1.1.3)
 
 SPEC CHECKSUMS:
   APAddressBook: f7e50fce276ae975c202b83b0ee98f4efde5a104
+  ColorUtils: f99c501f9caf5374b35480a281168565a24bdb6d
 
-PODFILE CHECKSUM: 4e9d0fa880236e4f6a7812981bfc507687de263c
+PODFILE CHECKSUM: 3114a8c600f728fa2726d93535421b42a6bc57c8
 
 COCOAPODS: 1.2.0

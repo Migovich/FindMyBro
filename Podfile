@@ -7,5 +7,6 @@ target 'FindMyBro' do
 
   # Pods for FindMyBro
   pod 'APAddressBook'
+  pod 'ColorUtils', '~> 1.1.3'
   
 end
